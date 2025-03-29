@@ -1,31 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cs.css">
-    <style>
-       
-    </style>
+<meta charset="UTF-8">
+<title>My Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" >
+<style>
+    body {font-family: system-ui, sans-serif;
+        margin: 0;
+        background-color: #e0dbdb;
+        }
+    header {background: #fcfff2; 
+        color: #fff; padding: 10px; 
+        text-align: right;
+    }
+    #container {display: flex;
+        max-width: 1200px; 
+        margin: 20px auto; }
+
+    #sidebar {
+    width: 25%;
+        background: #fff; padding: 20px;
+        border-radius: 25px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    #main { width: 50%; background: #fff;
+    padding: 20px; margin: 0 20px;
+        border-radius: 25px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);}
+
+        #right {width: 25%; 
+        border-radius: 25px;
+        background: #fff; 
+            padding: 20px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.profile { display: flex; align-items: center; margin-bottom: 20px;}
+.profile img {
+    border-radius: 50%; width: 50px;
+    height: 50px; margin-right: 10px;}
+
+.post {margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; }
+    .card {
+    margin-bottom: 15px;
+    padding: 10px; background: #e9ecef;
+    border-radius: 5px;
+    }
+.button {display: inline-block;
+    margin-top: 10px; padding: 10px 20px;
+    background: #007bff; color: white;
+    text-decoration: none; border-radius: 5px;}
+</style>
 </head>
 <body>
-    <div id="top-header"></div>
-   
-    <div class="box" id="box1">My Profile</div>
-    <div class="box" id="box2">Box 2</div>
-    <div class="box" id="box3">Box 3</div>
-    <div class="box" id="box4">Box 4</div>
-    <div class="box" id="box5">Box 5</div>
-    <div class="box" id="box6">Box 6</div>
-    <div class="box" id="box7">Box 7</div>
-    <div class="box" id="box8">Box 8</div>
-    <div class="box" id="box9">Box 9</div>
-    <div class="box" id="box10">Box 10</div>
-    <div class="box" id="box11">Box 11</div>
-    <div class="box" id="box12">Box 12</div>
-    <div class="box" id="box13">Box 13</div>
-    
-    
+
+<header>
+ <div>
+ <br>
+</div>
+</header>
+
+
+<div id="container">
+<div id="sidebar">
+    <h2>My Profile</h2>
+<div class="profile">
+    <img src="ash.jpg" >
+<div>
+    <h3>Designer, UI</h3>
+        <p>USA, CAGAYAN DE ORO Philliphines</p>
+
+
+</div>
+</div>
+
+    <p>Music, Food, Design, Art, Photos</p>
+        <h5>Hey!</h5>
+</div>
+
+
+
+
+
+<div id="main">
+<div>
+    <input type="text" placeholder="Status: Feeling Blue" 
+    style="width: 100%; padding: 10px;">
+    <a class="button" href="#">Post</a>
+</div>
+
+
+
+
+<div class="post">
+    <div class="profile">
+    <img src="urban.png" >
+    <div>
+        <strong>Nico Saligumba</strong> <small>1 min ago</small>
+    </div>
+    </div>
+<p>omw to gym</p>
+    <img src="nico.png" >
+    <img src="nico2.png" >
+    <div>
+        <a href="#">Like</a>
+        <a href="#">Comment</a>
+    </div>
+</div>
+
+
+
+
+<div class="post">
+<div class="profile"> 
+<div>
+    <strong>Jasen Omnigaba</strong> <small>16 min ago</small>
+</div>
+</div>
+    <p>Tara kayat ta...</p>
+<div>
+    <a href="#">Like</a>
+    <a href="#">Comment</a>
+</div>
+</div>
+
+
+
+
+
+<div class="post">
+<div class="profile">
+    <img src="jane.png" >
+    <div>
+        <strong>Angie Jane</strong> <small>32 min ago</small>
+</div>
+</div>
+    <p>masarap talaga mag BJ ngayong tig tang init...</p>
+<div>
+        <a href="#">Like</a>
+        <a href="#">Comment</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="right">
+        <h3>Upcoming Events:</h3>
+    <div class="card">
+        <strong>Holiday</strong> <br>
+        <small>Friday 15:00</small> <br>
+        <a class="button" href="#">Info</a>
+    </div>
+
+<h3>Friend Request</h3>
+    <div class="card">
+        <img src="fq.png" alt="Friend Request">
+        <strong>Jane Doe</strong>
+        <br>
+        <a class="button" href="#">Accept</a>
+        <a class="button" href="#">Decline</a>
+</div>
+
+
+<h3>ADS</h3>
+<div class="card">Your ad here</div>
+</div>
+</div>
+
 </body>
 </html>
